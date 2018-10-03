@@ -12,10 +12,27 @@ function carousel() {
     x[slideIndex - 1].style.display = "block";
 }
 
+function dots() {
+    var i;
+    var x = document.getElementsByClassName("dot");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.color = "black";
+    }
+    x[(slideIndex+1)%3].style.color = "white";
+}
+
 function Auto() {
-    this.start = setInterval(carousel, 2000);
+    this.start = setInterval(() => {
+        carousel();
+        dots();
+    }, 2000);
     this.stop = () => { clearInterval(this.start); };
-    this.countinue = () => { this.start = setInterval(carousel, 2000); }
+    this.countinue = () => {
+    this.start = setInterval(() => {
+        carousel();
+        dots();
+    }, 2000);
+    }
 }
 
 var autoSlide = new Auto();
@@ -45,4 +62,6 @@ function goBack() {
     if (slideIndex === 0) { slideIndex = x.length };
     x[slideIndex - 1].style.display = "block";
 }
+
+
 
