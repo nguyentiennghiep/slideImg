@@ -15,6 +15,11 @@ body{
     color: rgba(211, 195, 195, 0.514);
 }
 
+.right-arrow:hover{
+    color : white;
+    cursor: pointer;
+}
+
 .left-arrow{
     font-size: 75px;
     position: absolute;
@@ -24,6 +29,11 @@ body{
     z-index: 10000;
     color: rgba(211, 195, 195, 0.514);
 
+}
+
+.left-arrow:hover{
+    color : white;
+    cursor: pointer;
 }
 
 .dots{

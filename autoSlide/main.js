@@ -24,7 +24,6 @@ function goNext() {
     var i;
     autoSlide.stop();
     autoSlide.countinue();
-    console.log("run");
     var x = document.getElementsByClassName("slide-img");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
