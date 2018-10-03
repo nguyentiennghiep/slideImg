@@ -1,0 +1,52 @@
+body{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100vh;
+}
+
+.right-arrow{
+    font-size: 75px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);    
+    z-index: 10000;
+    color: rgba(211, 195, 195, 0.514);
+}
+
+.left-arrow{
+    font-size: 75px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);    
+    z-index: 10000;
+    color: rgba(211, 195, 195, 0.514);
+
+}
+
+.dots{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+}
+
+.slide-img{
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+}
+
+/* .active{
+    display: block;
+} */

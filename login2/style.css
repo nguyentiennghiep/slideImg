@@ -1,0 +1,57 @@
+body{
+  background: url("http://www.jtsstrength.com/wp-content/uploads/2013/07/food-healthy-red-summer.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+form{
+    position: relative;
+    background-color: rgba(15, 15, 15, 0.747);
+    padding: 1rem 2rem;
+}
+
+form img {
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border:3px solid white;
+    border-radius: 50%;
+}
+
+form h2{
+    color: white;
+    text-align: center;
+    margin-top:3rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+input{
+    display: block;
+    margin : 1rem 0rem;
+    padding: 8px 14px;
+    border:none;
+    outline: none;
+    border-radius: 2rem;
+    background-color: rgba(106, 105, 109, 0.144);
+    color: white;
+
+}
+
+form button{
+    width: 100%;
+    border:none;
+    padding: 4px 7px;
+    border-radius: 4px;
+    background-color: white;
+    margin: 10px 0;
+}
