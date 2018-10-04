@@ -1,5 +1,47 @@
-*{
+html, body, h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
+  margin :0;
+  padding: 0;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  height: 100px;
+}
+
+#cl{
+  clear: both;
+}
+
+/* left-colum  */
+.left-column{
+  float: left;
+  width: 30.5%;
+  height: 100%;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+  margin-left: 8px;
+  margin-top: 8px; 
+  margin-right: 8px;
+}
+
+.left-column .intro{
+  padding: 8px 8px;
+}
+
+/* right-column */
+.right-column{
+  float: right;
+  width: 65%;
+  height: 100%;
+  padding: 0;
+  margin-top: 8px; 
+  margin-right: 8px;
+}
+
+.right-column .work-experience{
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
 }
 
 
@@ -8,20 +50,86 @@ hr{
     border-top: 1px solid #eee;
     margin: 20px 0;
 }
-/* title skill and language css  */
-.process-title{
-  position: relative;
+/* .work-experience */
+.right-column .work-experience{
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+  padding: 8px 20px;
 }
-.process-title p{
-  position: absolute;
-  top :-25px;
-  left: 40px;
-  font-size: 25px;
-  color:#757575;
+.work-experience h1{
+  margin: 0;
 }
 
+/* edu-experience */
+.right-column .edu-experience{
+  margin:20px 0;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+  padding: 8px 20px;
+  
+} 
+
+.edu-experience h1{
+  margin: 0;
+}
+
+/* work */
+
+.work h1,h3{
+  color:#757575;
+}
+.work h3+p{
+  color:#009688;
+}
+
+/* avatar */
+.avatar{
+  position: relative;
+}
+
+.gradi{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(9,9,9);
+  background: rgb(9,9,9);
+  background: -moz-linear-gradient(0deg, rgba(9,9,9,1) 0%, rgba(255,255,255,0.2221931008731618) 47%);
+  background: -webkit-linear-gradient(0deg, rgba(9,9,9,1) 0%, rgba(255,255,255,0.2221931008731618) 47%);
+  background: linear-gradient(0deg, rgba(9,9,9,1) 0%, rgba(255,255,255,0.2221931008731618) 47%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090909",endColorstr="#ffffff",GradientType=1);
+  top:0;
+}
+.avatar img{
+  width: 100%;
+}
+
+.avatar h2{
+  position: absolute;
+  color:rgb(185, 181, 181);
+  left:30px;
+  bottom: 0;
+  text-align: center; 
+}
+
+/* infomation */
+.infomation > p{
+  font-size: 18px;
+  color:#757575;
+}
+/* logo style */
+
+.skills > p{
+  font-size: 18px;
+}
+
+.languges > p{
+  font-size: 18px;
+}
+
+.logo{
+  margin-right: 16px;
+  color: #009688;
+}
 /* skill css */
-.skill-process p{
+.skills p{
   color:#757575;
 }
 
@@ -70,3 +178,43 @@ hr{
     border-radius: 15px;
   }
 
+
+
+/* footer */
+.footer{
+  margin: 0;
+  padding: 0;
+  height: 150px;
+  text-align: center;
+  background-color: #009688;
+  width: 100%;
+}
+
+@media(max-width: 600px)
+{
+  
+  .left-column{
+    display: block;
+    width: 88vw;
+    margin-left: 25px;
+    margin-right:10px; ;
+  }
+
+  
+  .right-column{
+    display: block;
+    width: 100%;
+  }
+
+  .right-column .edu-experience{
+    margin-left: 33px;
+    margin-top: 20px; 
+    margin-right: 20px;
+  }
+
+  .right-column .work-experience{
+    margin-left: 33px;
+    margin-top: 20px; 
+    margin-right: 20px;
+  }
+}
